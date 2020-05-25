@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" ></script>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #cacaca;
+            }
+            div{
+                text-align: center;
+            }
+            
+            button {
+    margin-top: 20px;
+    background: red;
+    border: none;
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius: 40px;
+    background: #fff;
+    border: 2px solid #1abc9c;
+    color: #1abc9c;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    font-family: 'Roboto', sans-serif;
+    }
+    button:hover {
+     color: white;
+     background: #1abc9c;
+    }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 class="head">Simulation and Realtime Comparison of AJAX Requests (Bitcoin API)</h1>
+            <h3>You will get Bitcoin price in Indian Rs.(Dollar price = 75.9Rs.) </h3>
+            <h3>Price chnages may take seconds due to API call! </h3>
+            <h1><p  >Bitcoin Price : <span id="showf"></span></p></h1>
+        </div>
+        <div>
+            <button id="xhr">XMLHttpRequest</button>
+          <button id="fet">Fetch API</button> 
+          <button id="jq">jQuery</button>
+          <button id="axi">Axiom</button>
+        </div > 
+        <div id="codebox" style="margin-top: 20px; display:flex; height: auto; width: auto; line-height:1.8; border: #1abc9c solid 5px;">
+
+        </div>
+        <footer>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span class="setfont" style="letter-spacing: 0.1em; font-size: 1.9rem;">About Developer</span> </p>
+                <p class="footer-company-about">
+                    <span style="color:  red; font-size: 24px; font-weight: bold;">Shubham S. More</span>
+                </p>
+                <p class="footer-company-about">
+                <span><i class="mr-2 fa fa-phone"></i><a href="tel:7020958418">Contact: +91 7020958418 </a></span> </p>
+                <p class="footer-company-about">
+                <span><i class="mr-2 fa fa-envelope"></i><a href="mailto:ssmore161@gamil.com">ssmore161@gmail.com</a></p>
+           
+        </div>
+    </footer>
+    
+
+
+
+          <script src="cur.js"></script>       
+    </body>
+</html>
